@@ -1,0 +1,39 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    
+    <constant name="struts.devMode" value="true"/>
+    <!-- Configuration for the default package. -->
+    <package name="default" extends="struts-default">
+        
+        <!--Accion para  -->
+        <action name="AgregarPizza" class="Controlador.AgregarPizza" method="agregar">            
+            <result name="success">ListaPizzas.jsp</result>            
+        </action>
+        
+        <!--Accion para ir al formulario de agregar pizza -->
+        <action name="MostrarAggPizza" class="Controlador.AgregarPizza" method="mostrar">
+            <result name="success">AgregarPizza.jsp</result>
+            <result name="error">Error.jsp</result>
+        </action>
+        
+        <!--Accion para ir al jsp donde se listan las pizzas -->
+        <action name="MostrarListaPizzas" class="Controlador.MostrarLista" method="mostrar">
+            <result name="success">ListaPizzas.jsp</result>
+        </action>
+        
+        <!--Accion para ir al formulario ordenar -->
+        <action name="Ordenar" class="Controlador.Ordenar" method="ordenar">
+            <result name="success">Ordenar.jsp</result>
+        </action>   
+             
+        <!--Accion para confirmar la orden e ir al jsp del recibo -->
+        <action name="ConfirmarOrden" class="Controlador.ConfirmarOrden" method="confirmarOrden">
+            <result name="success">ReciboOrden.jsp</result>
+        </action>
+        
+        
+    </package>
+</struts>
