@@ -34,6 +34,10 @@
             <result name="success">ReciboOrden.jsp</result>
         </action>
         
+        <!--Accion para confirmar la orden e ir al jsp del recibo -->
+        <action name="RegresarInicio" class="Controlador.RegresarInicio" method="regresar()">
+            <result name="sucess">index.jsp</result>
+        </action>
         
     </package>
 </struts>

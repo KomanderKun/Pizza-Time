@@ -72,6 +72,10 @@
             </tr>
             
         <% } %>
+        
+        <s:form action="RegresarInicio">
+            <s:submit value="Regresar a inicio"/>
+        </s:form>
     
         
     </body>
