@@ -22,5 +22,10 @@
             
             <s:submit value="Ver la lista de pizzas"/>
         </s:form>
+        
+        <s:form action="MostrarListaOrdenes">
+            
+            <s:submit value="Ver Lista de Ordenes"/>
+        </s:form>
     </body>
 </html>
