@@ -16,7 +16,7 @@
     <body>
         <h1>Bienvenido a Domino's Pizza </h1>
         
-        <header 
+        <header>
             <div class='head'>
                 <h2>Menú</h2>
             </div>
