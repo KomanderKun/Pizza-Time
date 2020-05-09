@@ -10,13 +10,13 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Domino's Pizza</title>
+        <title>Pizzeria Lara</title>
         <link rel='stylesheet' href="estilos.css"
         
     </head>
     <body>
        
-        <h1>Bienvenido a Domino's Pizza </h1>
+        <h1>Pizzeria Lara </h1>
         
         <header>
             <div class='head'>
@@ -25,26 +25,35 @@
             
             <nav>
                 <ul>
-                    
+                   <div class='header'>
                     <li> <s:form  action="MostrarAggPizza">
-            
-                            <s:submit value="Agregar Pizza"/>
+                            <s:submit  value="Agregar Pizza"/>
                         </s:form>
                     </li>
+                   </div>
                     
+                    <div class='header'>
                     <li>  
                         <s:form action="MostrarListaPizzas">
             
                            <s:submit value="Ver la lista de pizzas"/>
                         </s:form>
                     </li>
+                    </div>
+                    
+                    <div class='active'>
                     <li>
                         <s:form action="MostrarListaOrdenes">
             
                         <s:submit value="Ver Lista de Ordenes"/>
                         </s:form>
-                     
+                    <li>              
+                    </div>
+                    <form action="Login.jsp">
+                        <button class='btnpepe'type="submit">Login</button>
+                     </form> 
                     </li>
+                     
                      
                 </ul>
             </nav>
