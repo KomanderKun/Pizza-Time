@@ -62,6 +62,7 @@
         <!--Accion para validar el login -->
         <action name="Validar" class="Controlador.Login" method="validar">
             <result name="success">index.jsp</result>
+            <result name="error">Login.jsp</result>
         </action>
     </package>
 </struts>

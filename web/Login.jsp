@@ -15,9 +15,11 @@
     <body>
         <h1>Login</h1>
         
+        <s:actionerror/>
+        
         <s:form action="Validar">
-            <s:textfield name="Usuario" label="Usuario"/>
-            <s:textfield name="Contrasena" label="Contraseña"/>
+            <s:textfield name="User" label="Usuario"/>
+            <s:textfield name="Pass" label="Contraseña"/>
             
             <s:submit value="Entrar"/>
         </s:form>
