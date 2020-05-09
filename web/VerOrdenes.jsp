@@ -62,7 +62,7 @@
                 <td><%=rs.getString("NombrePizza")%></td>
                 <td><%=rs.getString("TamanoPizza")%></td>
                 <td>$<%=rs.getString("Total")%></td>
-                <td><a href="EditarOrden.jsp?Id_Orden=<%=rs.getString("Id_orden") %>">Editar</a></td>
+                <td><a href="ModificarOrden.jsp?Id_Orden=<%=rs.getString("Id_orden") %>">Editar</a></td>
                     
             </tr>
               

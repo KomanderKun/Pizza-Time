@@ -44,5 +44,9 @@
             <result name="success">VerOrdenes.jsp</result>
         </action>
         
+        <action name="ModificarOrden" class="Controlador.ModificarOrden" method="modificar">
+            <result name="success">VerOrdenes.jsp</result>
+        </action>
+        
     </package>
 </struts>
