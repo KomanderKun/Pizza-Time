@@ -26,7 +26,7 @@
             <nav>
                 <ul>
                     
-                    <li> <s:form action="MostrarAggPizza">
+                    <li> <s:form  action="MostrarAggPizza">
             
                             <s:submit value="Agregar Pizza"/>
                         </s:form>
