@@ -18,7 +18,9 @@
        
         <h1>Bienvenido a Domino's Pizza </h1>
         
+
         <header> 
+        <header>
             <div class='head'>
                 
             </div>
