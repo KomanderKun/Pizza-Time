@@ -16,10 +16,11 @@
     </head>
     <body>
        
-        <h1>Pizzeria Lara </h1>
+        
         
         <header>
             <div class='head'>
+                <h1>Pizzeria Lara</h1>
                 
             </div>
             
