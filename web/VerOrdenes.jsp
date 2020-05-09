@@ -6,18 +6,15 @@
 
 <%@page import="java.sql.*"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>JSP Page</title>       
     </head>
-    <body>
-        
-        <h3>Ordenes</h3>
-        
-        
-        <%
+    
+    <%
         String DRIVER = "com.mysql.cj.jdbc.Driver";
         String USER = "root";
         String PASSWORD = "root";
@@ -42,7 +39,8 @@
              System.out.println(e);
          }
         %>
-        
+    <body>        
+        <h3>Ordenes</h3>
         <table>
             <tr>
                 <th>No. de Orden</th>
@@ -64,12 +62,20 @@
                 <td><%=rs.getString("NombrePizza")%></td>
                 <td><%=rs.getString("TamanoPizza")%></td>
                 <td>$<%=rs.getString("Total")%></td>
-                <td><a href="ModificarOrden.jsp?Id_Orden=<%=rs.getString("Id_orden") %>">Editar</a></td>
-                    
+                <td><a href="ModificarOrden.jsp?Id_Orden=<%=rs.getString("Id_orden") %>">Editar</a>
+                    <a href="EliminarOrden.jsp?Id_Orden=<%=rs.getString("Id_orden") %>">Eliminar</a>
+                </td>                    
             </tr>
               
-        <% } %>
+        <% } %>       
 
         </table>
+        
+        <s:form action="RegresarInicio">
+            
+            <s:submit value="Regresar a Inicio"/>
+            
+        </s:form>
+        
     </body>
 </html>
