@@ -99,5 +99,37 @@ public class GestionOrden {
          
          return totalprron;
      }
+     
+     public void ModificarOrden(String Nombre, String Direccion, String Telefono, String ID){
+         
+         Connection con = null;
+        PreparedStatement ps = null;
+        
+        try{
+            con = Conexion.Conexion.getConexion();
+            String sql = "update orden set Nombre='"+Nombre+"',Direccion='"+Direccion+"',Telefono='"+Telefono+"'where Id_orden='"+ID+"'";
+            ps = con.prepareStatement(sql);         
+            
+            ps.executeUpdate();
+            
+        } catch(SQLException e){
+            System.out.println(e);
+        } finally{
+            try{
+                if(ps != null){
+                    ps.close();
+                }
+                
+                if(con != null){
+                    con.close();
+                }
+                
+            }catch(SQLException e){
+                        System.out.println(e);
+                }
+            
+        }
+         
+     }
     
 }

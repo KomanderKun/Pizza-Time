@@ -1,97 +1,81 @@
 <%-- 
-    Document   : ReciboOrden
-    Created on : 7/05/2020, 12:57:08 PM
+    Document   : VerOrdenes
+    Created on : 8/05/2020, 03:06:13 PM
     Author     : gmndi
 --%>
 
-<%@page import="Controlador.ConfirmarOrden"%>
-<%@page import="Controlador.Ordenar"%>
-<%@page import="Modelo.Orden"%>
 <%@page import="java.sql.*"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@taglib prefix="s" uri="/struts-tags"%>
+<%@taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>JSP Page</title>       
     </head>
-    <body>
-        
+    
     <%
-        Connection con = null;
-        PreparedStatement ps;
-        ResultSet rs = null;
-        String nom = request.getParameter("nombre");
-        System.out.println(nom);
-        
-        
         String DRIVER = "com.mysql.cj.jdbc.Driver";
         String USER = "root";
         String PASSWORD = "root";
         String URL = "jdbc:mysql://localhost:3306/pizza?useTimezone=true&serverTimezone=UTC";
         
+        Connection con = null;
+        PreparedStatement ps;
+        ResultSet rs = null;
+        
         try{
+            
+            
              Class.forName(DRIVER);
              con = DriverManager.getConnection(URL, USER, PASSWORD);
              
-             ps = con.prepareStatement("SELECT * FROM Orden where Nombre = '"+nom+"'");//Aquí va el nombre que necesitamos con el s:property
+             ps = con.prepareStatement("SELECT * FROM orden");
              rs = ps.executeQuery();
+             
+             
              
          } catch(ClassNotFoundException | SQLException e){
              System.out.println(e);
          }
-
         %>
-        
-        <h1>Ordenes a nombre de <s:property value="nombre"/></h1>
+    <body>        
+        <h3>Ordenes</h3>
         <table>
             <tr>
                 <th>No. de Orden</th>
                 <th>Nombre</th>
-                <th>Direccion</th>
-                <th>Ciudad</th>
-                <th>Telefono</th>
-                <th>Pizza</th>
+                <th>Ingredientes</th>
                 <th>Tamaños</th>
-                <th>Precio</th>
+                <th>Precios</th>
+                <th>Opciones</th>
             </tr>
         <%       
-            double total = 0;
-         while(rs.next()){
-             
-             total += rs.getDouble("Total");
+         while(rs.next()){         
         %>
-        
             <tr>
                 <td><%=rs.getString("Id_orden")%></td>
                 <td><%=rs.getString("Nombre")%></td>
                 <td><%=rs.getString("Direccion")%></td>
                 <td><%=rs.getString("Ciudad")%></td>
                 <td><%=rs.getString("Telefono")%></td>
-                <td> <%=rs.getString("NombrePizza")%></td>
+                <td><%=rs.getString("NombrePizza")%></td>
                 <td><%=rs.getString("TamanoPizza")%></td>
                 <td>$<%=rs.getString("Total")%></td>
+                <td><a href="ModificarOrden.jsp?Id_Orden=<%=rs.getString("Id_orden") %>">Editar</a>
+                    <a href="EliminarOrden.jsp?Id_Orden=<%=rs.getString("Id_orden") %>">Eliminar</a>
+                </td>                    
             </tr>
-            
-            
-        <% } %>
-        
-        <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td style="text-align: right">Total: </td>
-                <td><%="$"+total %></td>
-            </tr>
+              
+        <% } %>       
+
+        </table>
         
         <s:form action="RegresarInicio">
-            <s:submit value="Regresar a inicio"/>
+            
+            <s:submit value="Regresar a Inicio"/>
+            
         </s:form>
-    
         
     </body>
 </html>

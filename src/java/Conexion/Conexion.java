@@ -7,10 +7,7 @@ package Conexion;
 
 import java.sql.*;
 
-/**
- *
- * @author gmndi
- */
+
 public class Conexion {
     
     
