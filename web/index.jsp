@@ -12,7 +12,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
-    <body>
+    <body>        
         <s:form action="MostrarAggPizza">
             
             <s:submit value="Agregar Pizza"/>

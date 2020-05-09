@@ -71,11 +71,13 @@
             
         </table>
             
-            <h2>Elementos que puedes modificar</h2>
+            
         
         
         
         <s:form action="ModificarOrden">
+            
+            <h2>Elementos que puedes modificar</h2>
             
             <s:set var="IdNuevo" name="IdNuevo"><%= rs.getString("Id_orden")%></s:set>
             
