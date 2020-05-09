@@ -1,8 +1,9 @@
 body {
-    background: url(img/dominos.jpg)
+    background: url(img/DOM.png)
     no-repeat center center fixed;
-    background-size: cover;
+    background-size: contain;
     font-family: sans-serif;
+}
     
     header {
         width:80%;
@@ -26,7 +27,8 @@ body {
     }
     
     li{
-        display: inline;
+        display: inline
+        
         
     }
     
@@ -80,7 +82,7 @@ body {
         
     }
     
-    .PizzaCham,.PizzaHawai, .PizzaPepe{
+    .PizzaFat,.PizzaChurro, .PizzaPepe, .PizzaPerr, .PizzaPlac{
           padding-left: 1rem;
     
     }
@@ -90,16 +92,10 @@ body {
     margin: 3%;
 }
 
-    .btn{
+    .btnpepe{
     background-color: gold;
     padding: 1rem;
     border: none;
     border-radius: 8px;
-    margin-left: 45%;
-}
-
-  
-    
-    
-    
+    margin-left: 0%;
 }

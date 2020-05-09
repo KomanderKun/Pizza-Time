@@ -12,13 +12,15 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Domino's Pizza</title>
         <link rel='stylesheet' href="estilos.css"
+        
     </head>
     <body>
+       
         <h1>Bienvenido a Domino's Pizza </h1>
         
-        <header 
+        <header> 
             <div class='head'>
-                <h2>Menú</h2>
+                
             </div>
             
             <nav>
@@ -36,7 +38,14 @@
                            <s:submit value="Ver la lista de pizzas"/>
                         </s:form>
                     </li>
-                    
+                    <li>
+                        <s:form action="MostrarListaOrdenes">
+            
+                        <s:submit value="Ver Lista de Ordenes"/>
+                        </s:form>
+                     
+                    </li>
+                     
                 </ul>
             </nav>
             
@@ -45,29 +54,57 @@
         
     <showcase>
         <div class='container'>
-             <h2> La mejor Pizza de México</h2>
+             <h2> Menú</h2>
         
              <div class='category'>
                  
                  <div class='PizzaPepe'>
                      <img src='img/PEPE.png'>
                      
-                     <h4>Nuestra pizza clasica</h4>
-                     
+                     <h4>Clasica</h4>
+                     <form method="get" action="Clasica.jsp">
+                        <button class='btnpepe'type="submit">Conoce mas</button>
+                     </form>  
                      
                  </div>
-                 <div class='PizzaCham'>
-                     <img src='img/Champ.jpg'>
+                 <div class='PizzaFat'>
+                     <img src='img/4Q.png'>
                      
-                     <h4>La favorita</h4>
+                     <h4>Fat Cat</h4>
+                     <form method="get" action="Fat.jsp">
+                        <button class='btnpepe' type="submit">Conoce mas</button>
+                     </form>  
                      
                      
                  </div>
                  
-                  <div class='PizzaHawai'>
-                     <img src='img/HAWAIA.jpg'>
+                  <div class='PizzaChurro'>
+                     <img src='img/VGP.png'>
                      
-                     <h4>De Hawaii</h4>
+                     <h4>Churro</h4>
+                     <form method="get" action="Churro.jsp">
+                        <button class='btnpepe' type="submit">Conoce mas</button>
+                     </form>  
+                     
+                     
+                 </div>
+                 
+                  <div class='PizzaPerr'>
+                     <img src='img/hawaii.png'>
+                     
+                     <h4>Perrona</h4>
+                     <form method="get" action="Perrona.jsp">
+                        <button class='btnpepe' type="submit">Conoce mas</button>
+                     </form>   
+                 </div>
+                 
+                   <div class='PizzaPlac'>
+                     <img src='img/mex.png'>
+                     
+                     <h4>Placosa</h4>
+                       <form method="get" action="Plac.jsp">
+                        <button class='btnpepe' type="submit">Conoce mas</button>
+                     </form>  
                      
                      
                  </div>
@@ -83,22 +120,6 @@
         
         
         
-        
-        <s:form action="MostrarAggPizza">
-            
-            <s:submit value="Agregar Pizza"/>
-        </s:form>
-        
-        
-        
-        <s:form action="MostrarListaPizzas">
-            
-            <s:submit value="Ver la lista de pizzas"/>
-        </s:form>
-        
-        <s:form action="MostrarListaOrdenes">
-            
-            <s:submit value="Ver Lista de Ordenes"/>
-        </s:form>
+       
     </body>
 </html>
