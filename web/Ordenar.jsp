@@ -14,13 +14,38 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-        <link href="syles.css" rel="stylesheet" type="text/css"/>
+        <link href="styles.css" rel="stylesheet"/>        
+        <title>Ordenar</title>        
     </head>
-    <body>        
-        
-        
+    <body> 
+        <header>
+        <div class='head'>
+            <h1>Pizzeria Lara</h1>
+                
+        </div>
+            <nav>
+            <ul>
+                
+                   <li>
+                    </div>
+                    <form action="Login.jsp">
+                        <button class='btnpepe'type="submit">Login</button>
+                     </form> 
+                    </li>
+                    <li>
+                    </div>
+                    <form action="index.jsp">
+                        <button class='btnpepe'type="submit">Home</button>
+                     </form> 
+                    </li>
+            </ul>
+            </ul>
+            
+            </nav>
+        </header>
+        <div class="B1">
         <h1>Formulario para ordenar</h1>
+        <div class="form">
         <s:form action="ConfirmarOrden">
             
                     <s:textfield name="nombre" label="Nombre"/>
@@ -34,14 +59,13 @@
                     <s:select name="NombrePizza" id="NombrePizza" label="Pizza" list="MenuOrden"/>
                 
                     <s:radio name="TamanoPizza" id="TamanoPizza" label="Tamaño" list="Tam"/>
-                    
-                    
-                    
-                    <s:submit value="Confirmar Orden"/>
-                    <s:reset value="Limpiar"/>
+                                                           
+                    <s:submit type="button" value="Confirmar Orden"/>
+                    <s:reset type="button" value="Limpiar"/>
                
         </s:form>
-        
+        </div>
+                </div>
             <%
         String DRIVER = "com.mysql.cj.jdbc.Driver";
         String USER = "root";
@@ -67,7 +91,7 @@
              System.out.println(e);
          }
         %>
-        
+        <div class="B2">
         <table>
             <tr>
                 <th>No. de Pizza</th>
@@ -90,7 +114,7 @@
                     $<%=rs.getString("Precio2")%></td>
         <% } %>
 
-        </table>
-        
+        </table>  
+        </div>
     </body>
 </html>

@@ -11,7 +11,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Lista</title>
     </head>
         <%
         String DRIVER = "com.mysql.cj.jdbc.Driver";

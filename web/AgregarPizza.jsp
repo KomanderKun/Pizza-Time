@@ -10,9 +10,37 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <link href="styles.css" rel="stylesheet"/>
+        <title>Agregar Pizza</title>
     </head>
     <body>
+        <header>
+        <div class='head'>
+            <h1>Pizzeria Lara</h1>
+                
+        </div>
+            <nav>
+            <ul>
+                
+                   <li>
+                    </div>
+                    <form action="Login.jsp">
+                        <button class='btnpepe'type="submit">Login</button>
+                     </form> 
+                    </li>
+                    <li>
+                    </div>
+                    <form action="index.jsp">
+                        <button class='btnpepe'type="submit">Home</button>
+                     </form> 
+                    </li>
+            </ul>
+            </ul>
+            
+            </nav>
+        </header>
+        <div class="agregar">
+        <h1>Agregar otra Pizza</h1>
         <s:form action="AgregarPizza">
             
             <s:textfield name="Nombre" label="Nombre"/>
@@ -30,5 +58,6 @@
             <s:reset value="Reiniciar"/>
             
         </s:form>
+        </div>
     </body>
 </html>

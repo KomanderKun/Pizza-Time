@@ -10,10 +10,12 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <link href="styles.css" rel="stylesheet"/>  
+        <title>Iniciar Sesion</title>
     </head>
     <body>
-        <h1>Login</h1>
+    <div class="sesion">
+        <h1>Iniciar Sesion</h1>
         
         <s:actionerror/>
         
@@ -28,6 +30,6 @@
             
             <s:submit value="Registrar"/>
         </s:form>
-        
+    </div>
     </body>
 </html>
