@@ -1,37 +1,120 @@
-/* Split the screen in half */
-.split {
-  height: 100%;
-  width: 50%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
+body{
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #fff;
+    font-family: sans-serif;   
+    background: url(img/pizza.png);
+    background-size: cover;
+    height: 100vh;  
 }
 
-/* Control the left side */
-.left {
-  left: 0;
-  background-color: #111;
+    header {
+        width:80%;
+        margin: auto;
+        overflow:hidden;
+          
+    }
+    
+    .head{
+        float:left;
+        color: #fff;
+        font-family: Helvetica;
+        
+        
+    }
+
+.B1{
+    position: absolute;
+    width: 50%;
+    height: 400px;
+    left: 5%;
+    font-size: 20px;
+    top:100px;    
 }
 
-/* Control the right side */
-.right {
-  right: 0;
-  background-color: red;
+.B2{
+    position: absolute;
+    width: 45%;
+    height: 500px; 
+    left: 50%;
+    font-size: 25px;
+    z-index: 1;
+    opacity: .9;
+    top: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px #fff;
+    padding: 15px 12px;
+    box-shadow: 0 2px 12px #fff;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 12px 12px 0 0;
 }
 
-/* If you want the content centered horizontally and vertically */
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+.agregar{
+    width: 550px;
+    height: 420px;
+    background: transparent;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    opacity: .9;
 }
 
-/* Style the image inside the centered container, if needed */
-.centered img {
-  width: 150px;
-  border-radius: 50%;
+.agregar h1{
+    margin: 0;
+    padding: 0 0 20px;
+    font-family: sans-serif;  
+    text-align: center;
+    font-size: 50px;
+}
+
+.sesion{
+    position: absolute;
+    align-content: center;
+    width: 50%;
+    height: 50%; 
+    font-size: 20px;
+    z-index: 1;
+    opacity: .9;
+    top: 60px;
+    left: 30%;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px #fff;
+    box-shadow: 0 2px 12px #fff;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 12px 12px 0 0;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 30px 30px;
+}
+
+.sesion h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 33px;
+}
+
+.btnpepe{
+    background-color: gold;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    margin-left: 0%;
+}
+
+.btnLogin{
+    background-color: red;
+    padding: 1rem;
+    border: black;
+    border-radius: 8px;
+    margin-left: 0%;
 }
