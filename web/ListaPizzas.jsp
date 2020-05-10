@@ -11,6 +11,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="styles.css" rel="stylesheet"/>
         <title>Lista</title>
     </head>
         <%
@@ -35,7 +36,35 @@
          }
         %>
     <body>
+       
+         <header>
+            <div class='head'>
+            <h1>Pizzeria Lara</h1>
+                
+            </div>
+            <nav>
+            <ul>
+                
+                   <li>
+                    
+                    <form action="Login.jsp">
+                        <button class='btnpepe'type="submit">Login</button>
+                     </form> 
+                    </li>
+                    
+                    <li>
+                    
+                    <form action="index.jsp">
+                        <button class='btnpepe'type="submit">Home</button>
+                     </form> 
+                    </li>
+            
+            </ul>
+            
+            </nav>
+        </header>
         <h1>Lista de Pizzas</h1>
+        <div class="B2">
         <table>
             <tr>
                 <th>No. de Pizza</th>
@@ -59,10 +88,13 @@
         <% } %>
 
         </table>
+        </div>
+        
+        
         
         <s:form action="MostrarAggPizza">
             
-            <s:submit value="Agregar otra picsa"/>
+            <s:submit value="Agregar otra pizza"/>
         </s:form>
             <s:form action="Ordenar">
                 

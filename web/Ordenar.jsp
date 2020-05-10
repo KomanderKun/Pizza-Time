@@ -27,18 +27,19 @@
             <ul>
                 
                    <li>
-                    </div>
+                    
                     <form action="Login.jsp">
                         <button class='btnpepe'type="submit">Login</button>
                      </form> 
                     </li>
+                    
                     <li>
-                    </div>
+                    
                     <form action="index.jsp">
                         <button class='btnpepe'type="submit">Home</button>
                      </form> 
                     </li>
-            </ul>
+            
             </ul>
             
             </nav>

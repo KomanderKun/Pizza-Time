@@ -33,14 +33,7 @@
                     </li>
                    </div>
                     
-                    <div class='header'>
-                    <li>  
-                        <s:form action="MostrarListaPizzas">
-            
-                           <s:submit value="Ver la lista de pizzas"/>
-                        </s:form>
-                    </li>
-                    </div>
+                   
                     
                     <div class='active'>
                     <li>

@@ -52,6 +52,26 @@ body{
     border-radius: 12px 12px 0 0;
 }
 
+B3{
+    position: absolute;
+    align-items: center;
+    width: 60%;
+    left: 10%;
+    height: 300px; 
+    font-size: 18px;
+    z-index: 1;
+    opacity: .9;
+    top: 150px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px #fff;
+    padding: 15px 12px;
+    box-shadow: 0 2px 12px #fff;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 12px 12px 0 0; 
+}
+
 .agregar{
     width: 550px;
     height: 420px;
@@ -74,6 +94,12 @@ body{
     font-size: 50px;
 }
 
+.btn{
+    position: absolute;
+    align-items: center;
+    top: 490px;
+    left: 80%;
+}
 .sesion{
     position: absolute;
     align-content: center;
