@@ -63,8 +63,8 @@
             
             </nav>
         </header>
-        <h1>Lista de Pizzas</h1>
-        <div class="B2">
+        <div class="B4">
+        <h1>Lista de Pizzas</h1>        
         <table>
             <tr>
                 <th>No. de Pizza</th>
@@ -91,7 +91,7 @@
         </div>
         
         
-        
+        <div class="btn">
         <s:form action="MostrarAggPizza">
             
             <s:submit value="Agregar otra pizza"/>
@@ -100,5 +100,6 @@
                 
                 <s:submit value="Ordenar"/>
             </s:form>
+        </div>
     </body>
 </html>
