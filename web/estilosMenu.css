@@ -1,22 +1,22 @@
 body {
-    background: url(img/DOM.png)
+    background: url(img/pizza.png)
     no-repeat center center fixed;
-    background-size: contain;
+    background-size: cover;
     font-family: sans-serif;
 }
     
     header {
         width:80%;
         margin: auto;
-        color: #344ceb;
+        color: #fff;
         overflow:hidden;
           
     }
     
     .head{
         float:left;
-        color: #344ceb;
-        font-family: cursive;
+        color: #fff;
+        font-family: sans-serif;
         
         
     }
@@ -78,10 +78,11 @@ body {
     }
 
     
-    h4{
+    h2{
     font-size: 1.5rem; /*1rem=16px */
     margin: 3%;
-}
+    color: #fff;
+    }
 
     .btnpepe{
     background-color: gold;
@@ -90,9 +91,6 @@ body {
     border-radius: 8px;
     margin-left: 0%;
     
-    h2{
-       color: #fff;
-        
-    }
+   
 }
 

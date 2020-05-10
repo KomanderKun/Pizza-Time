@@ -15,13 +15,51 @@
 
     </head>
     <body>
-         <h1>Detalles de Pizza</h1>
-        <img src='img/4Q.png'>
-        <h2>Para los amantes del tocino:<br>
-            Fat Cat tiene Peperoni y tocino en sus ingredientes, con orilla de queso.</h2>
         
-           <s:form action="Ordenar">
+        <header>
+        <div class='head'>
+            <h1>Pizzeria Lara</h1>
+                
+        </div>
+            <nav>
+            <ul>
+                
+                   <li>
+                    </div>
+                    <form action="Login.jsp">
+                        <button class='btnpepe'type="submit">Login</button>
+                     </form> 
+                    </li>
+                    <li>
+                    </div>
+                    <form action="index.jsp">
+                        <button class='btnpepe'type="submit">Home</button>
+                     </form> 
+                    </li>
+            </ul>
+          
+            
+            </nav>
+        </header>
+        
+       <showcase>
+        
+        
+        
+   
+            <div class='container'>
+                <h2>Detalles de Pizza</h2>
+                <img src='img/4Q.png'>
+                <h3>Para los amantes del tocino:<br>
+                Fat Cat tiene Peperoni y tocino en sus ingredientes, con orilla de queso.</h3>
+        
+                <s:form action="Ordenar">
                 <s:submit value="Ordenar"/>
-           </s:form>
+                </s:form>
+            
+            </div>
+        
+        </showcase>
+        
     </body>
 </html>

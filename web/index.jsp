@@ -48,7 +48,9 @@
             
                         <s:submit value="Ver Lista de Ordenes"/>
                         </s:form>
-                    <li>              
+                    </li> 
+                    
+                    <li>
                     </div>
                     <form action="Login.jsp">
                         <button class='btnpepe'type="submit">Login</button>
